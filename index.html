@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kalkulator BMI</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input">
+                <h1>Kalkulator BMI</h1>
+
+                <p>
+                    Berat badan ideal adalah impian semua orang. Tidak hanya
+                    memiliki bentuk tubuh yang menunjang penampilan, berat badan
+                    ideal juga menandakan kondisi tubuh yang sehat. Bagaimana
+                    denganmu? Yuk, hitung sekarang di kalkulator BMI.
+                </p>
+
+                <div class="card">
+                    <form method="POST">
+                        <fieldset>
+                            <legend>Jenis Kelamin:</legend>
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="jenisKelamin"
+                                    id="jenisKelamin1"
+                                    value="Pria"
+                                    checked
+                                />
+                                <label for="jenisKelamin1">Pria</label>
+
+                                <input
+                                    type="radio"
+                                    name="jenisKelamin"
+                                    id="jenisKelamin2"
+                                    value="Wanita"
+                                />
+                                <label for="jenisKelamin2">Wanita</label>
+                            </div>
+                        </fieldset>
+
+                        <label for="beratBadan">Berat Badan (kg)</label>
+                        <input
+                            id="beratBadan"
+                            type="number"
+                            name="beratBadan"
+                            min="1"
+                            max="1000"
+                            value="1"
+                            required
+                        />
+
+                        <label for="usia">Usia (tahun)</label>
+                        <input
+                            id="usia"
+                            type="number"
+                            name="usia"
+                            min="1"
+                            max="1000"
+                            value="1"
+                            required
+                        />
+
+                        <label for="tinggiBadan">Tinggi Badan (cm)</label>
+                        <input
+                            id="tinggiBadan"
+                            type="number"
+                            name="tinggiBadan"
+                            min="1"
+                            max="1000"
+                            value="1"
+                            required
+                        />
+
+                        <button type="submit" class="info">Hitung BMI</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                </div>
+
+                <h2>Keunggulan fitur</h2>
+
+                <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+
+                <p>
+                    Kalkulator ini hanya boleh digunakan oleh orang dewasa
+                    (wanita hamil atau menyusui tidak boleh mengandalkan
+                    pembacaan BMI ini) dan tidak ada tindakan yang harus diambil
+                    berdasarkan nilainya selain berkonsultasi dengan orang yang
+                    memenuhi syarat seperti dokter.
+                </p>
+
+                <p>
+                    Kalkulator akan memberi Anda gambaran tentang perbandingan
+                    berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau
+                    BMI) dihitung sebagai berat badan Anda (dalam kilogram)
+                    dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau
+                    BMI = Kg/M<sup>2</sup>
+                </p>
+            </div>
+
+            <div class="output hidden">
+                <h1>Hasil</h1>
+
+                <div class="card result">
+                    <h3></h3>
+                    <h2></h2>
+                    <p></p>
+
+                    <button type="button" class="info">
+                        Download Hasil BMI
+                    </button>
+                    <button type="button" class="info reset">
+                        Hitung Ulang BMI
+                    </button>
+                </div>
+
+                <p class="category-bmi"></p>
+
+                <button type="button" class="info">
+                    Konsultasi Ahli Gizi Via Aplikasi
+                </button>
+                <button type="button" class="info">
+                    Registrasi Online Ahli Gizi
+                </button>
+
+                <p>
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari
+                    kesehatan tubuh dan resiko penyakit seseorang. Anda perlu
+                    konsultasi lebih lanjut mengenai resiko dan kekhawatiran
+                    Anda terkait dengan berat badan Anda.
+                </p>
+
+                <div class="card result-effect">
+                    <h3></h3>
+                    <p></p>
+
+                    <button type="button" class="info">
+                        Konsultas Dokter Via Aplikasi
+                    </button>
+                    <button type="button" class="info">
+                        Registrasi Online Sekarang
+                    </button>
+                </div>
+
+                <h2 class="center">Download Aplikasi</h2>
+                <div class="badge-download">
+                    <a href="#">
+                        <img
+                            src="assets/playstore.webp"
+                            alt="Google Play Store"
+                        />
+                    </a>
+                    <a href="#">
+                        <img src="assets/appstore.webp" alt="App Store" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
